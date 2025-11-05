@@ -71,9 +71,10 @@ export default function Signin() {
 
   const signup = (eve) => {
     eve.preventDefault();
-    setLoading(true)
 
     if (!validateForm()) return;
+
+    setLoading(true)
 
     axios
       .post(import.meta.env.VITE_APP_API + "/signin", signin)
