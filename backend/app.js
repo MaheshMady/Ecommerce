@@ -1,5 +1,5 @@
 const express = require("express")
-const dbconnect = require("./Config/dbconnect")
+const dbconnect = require("./config/dbconnect")
 const cors = require("cors")
 const  router  = require("./Routes/adminroutes")
 const userrouter = require("./Routes/userroutes")
