@@ -3,10 +3,10 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import mensimage from "./assets/images/guy-dressed-brown-outfit-wearing-sunglasses-poses-with-backpack.jpg";
-import womensimage from "./assets/images/happy-lady-stylish-skirt-boater-posing-pink-wall.jpg";
-import kidsimage from "./assets/images/pretty-joyful-young-girl-tulle-skirt-with-long-brunette-hair-walking-with-white-packages-pink-background-lovely-sweet-moments-little-princess-pretty-friendly-child-having-fun-camera.jpg";
-import bgimage from "./assets/images/beautiful-smiling-business-woman-talking-phone.jpg";
+import mensimage from "./assets/images/with-backpack.jpg";
+import womensimage from "./assets/images/pink-wall.jpg";
+import kidsimage from "./assets/images/child-having-fun-camera.jpg";
+import bgimage from "./assets/images/woman.jpg";
 
 export default function App() {
   const navigate = useNavigate();
