@@ -124,8 +124,8 @@ export default function Login() {
             </Link>
           </p>
           <p className="p line">Or With</p>
-
-          <GoogleLogin className="mx-auto"
+          <div className="d-flex justify-content-center">
+             <GoogleLogin
             onSuccess={(credentials) => {
               axios
                 .post(`${import.meta.env.VITE_APP_API}/googleauth`, {
@@ -154,6 +154,9 @@ export default function Login() {
               toast.error("Error Occured please try again Later");
             }}
           ></GoogleLogin>
+          </div>
+
+         
         </form>
         <ToastContainer style={{ top: "100px" }} />
       </StyledWrapper>
