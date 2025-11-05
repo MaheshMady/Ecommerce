@@ -26,9 +26,10 @@ import ScrollToTop from './components/ScrollToTop.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <ScrollToTop />
+     
     <GoogleOAuthProvider clientId={import.meta.env.VITE_APP_CLIENT_ID}>
     <Router>
+      <ScrollToTop />
       <Routes>
         
          <Route exact path="/" element={<App/>}></Route>
