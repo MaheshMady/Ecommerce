@@ -1,0 +1,25 @@
+{
+    "success": true, 
+    "status": 201,
+    "message": "Created successfully!",
+    "data": []
+}
+
+{
+    "success": false, 
+    "status": 400,
+    "message": "Failed",
+    "data": []
+}
+
+{
+    "success": true, 
+    "status": 200,
+    "message": "Fetched successfully!",
+    "data": [
+        {},
+        {},
+        {},
+        {},
+    ]
+}
