@@ -9,8 +9,8 @@ exports.createCheckoutSession = function (lineitems, orderdetail) {
       orderid: String(orderdetail._id),
       userid: String(orderdetail.userid),
     },
-    success_url: "http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}",
-    cancel_url: "http://localhost:5173/failure?session_id={CHECKOUT_SESSION_ID}",
+    success_url: "ecommerce-alpha-teal.vercel.app/success?session_id={CHECKOUT_SESSION_ID}",
+    cancel_url: "ecommerce-alpha-teal.vercel.app/failure?session_id={CHECKOUT_SESSION_ID}",
   });
 
   return session;
