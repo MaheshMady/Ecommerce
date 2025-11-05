@@ -190,8 +190,8 @@ export default function Signin() {
           </button>
 
            <p className="p line">Or With</p>
-
-          <GoogleLogin className="mx-auto"
+          <div class="d-flex justify-content-center">
+                      <GoogleLogin 
             onSuccess={(credentials) => {
               axios
                 .post(`${import.meta.env.VITE_APP_API}/googleauth`, {
@@ -220,6 +220,9 @@ export default function Signin() {
               toast.error("Error Occured please try again Later");
             }}
           ></GoogleLogin>
+          </div>
+
+
 
           <p className="p">
             Already have an account?{" "}
