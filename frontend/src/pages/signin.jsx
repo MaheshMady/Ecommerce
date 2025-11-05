@@ -191,7 +191,7 @@ export default function Signin() {
 
            <p className="p line">Or With</p>
 
-          <GoogleLogin
+          <GoogleLogin className="mx-auto"
             onSuccess={(credentials) => {
               axios
                 .post(`${import.meta.env.VITE_APP_API}/googleauth`, {
