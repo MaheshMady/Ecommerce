@@ -22,9 +22,11 @@ import PaymentSuccess from './pages/PaymentSuccess.jsx'
 import PaymentFailure from './pages/PaymentFailure.jsx'
 import Verifyemail from './pages/verifyemail.jsx'
 import { GoogleOAuthProvider } from "@react-oauth/google"
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+     <ScrollToTop />
     <GoogleOAuthProvider clientId={import.meta.env.VITE_APP_CLIENT_ID}>
     <Router>
       <Routes>
