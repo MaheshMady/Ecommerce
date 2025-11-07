@@ -224,12 +224,16 @@ exports.addorder = async (req, res) => {
       .populate("userid")
       .populate("items.productid");
 
+    sendProductConfirmationMail(order.userid.email, order)
+  .then(() => console.log("Email sent"))
+  .catch((err) => console.error("Email send failed:", err));
+
     res.status(200).json({
       success: true,
       status:200,
       message: "Order placed successfully",
     });
-     sendProductConfirmationMail(order.userid.email, order);
+    
   } catch (err) {
     console.error("Order Error:", err.message);
     res.status(500).json({ success: false, message: err.message });
